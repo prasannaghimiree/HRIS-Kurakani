@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HRIS Chatbot</title>
+    <style>
+        body { font-family: Arial; margin: 50px; max-width: 600px; }
+        h1 { color: #333; }
+        textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .response {
+            margin-top: 20px;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ask the HRIS ChatBot</h1>
+    <form method="post" action="/chat">
+        <label for="query">Enter Your Query:</label>
+        <textarea id="query" name="query" rows="4" required>{{ query }}</textarea>
+        <button type="submit" style="background-color: grey ">Ask</button>
+    </form>
+
+
+    <div class="response">
+        <strong>Answer:</strong>
+        <p style="white-space: pre-wrap;">{{ answer }}</p>
+    </div>
+    
+
+</body>
+</html>
