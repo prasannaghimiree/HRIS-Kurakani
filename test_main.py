@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from typing import Optional
 from dotenv import load_dotenv
 
-from utils import fetch_pdf_data,split_text,initialize_vectorstore,initialize_retriever,initialize_qa_chain,ask_question
+from test_utils import fetch_pdf_data,split_text,initialize_vectorstore,initialize_retriever,initialize_qa_chain,ask_question
 
 
 logging.basicConfig(level=logging.INFO)
